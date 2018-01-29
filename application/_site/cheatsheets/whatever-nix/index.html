@@ -60,12 +60,11 @@
 
 <h4 id="httpaskubuntucomquestions46424adding-ssh-keys-to-authorized-keysadding-keys-to-authorizedkeys"><a href="Adding keys to authorized_keys">http://askubuntu.com/questions/46424/adding-ssh-keys-to-authorized-keys</a></h4>
 
-<div class="highlight"><pre><code class="bash"><span class="c">## Do something here...</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">## Do something here...</span></code></pre></div>
 
 <h4 id="generating-ssh-keyhttpshelpgithubcomarticlesgenerating-ssh-keys"><a href="https://help.github.com/articles/generating-ssh-keys/">Generating SSH Key</a></h4>
 
-<div class="highlight"><pre><code class="bash"><span class="c">## SSH Keygeneration Steps</span>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">## SSH Keygeneration Steps</span>
 
 &gt; <span class="nb">cd</span> ~/.ssh
 &gt; ssh-keygen -t rsa -C <span class="s2">&quot;your_email@example.com&quot;</span>
@@ -74,12 +73,11 @@
 &gt; ssh-add ~/.ssh/id_rsa
 &gt; pbcopy &lt; ~/.ssh/id_rsa.pub
 
-<span class="c">## You can now use this public key generated.</span>
-</code></pre></div>
+<span class="c">## You can now use this public key generated.</span></code></pre></div>
 
 <h4 id="config">Config</h4>
 
-<div class="highlight"><pre><code class="bash">Host github.com
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">Host github.com
   HostName github.com
   User git
   IdentityFile ~/.ssh/id_rsa_your_key_github
@@ -87,8 +85,7 @@
 Host bitbucket.org
   HostName bitbucket.org
   User git
-  IdentityFile ~/.ssh/id_rsa_your_key_bitbucket
-</code></pre></div>
+  IdentityFile ~/.ssh/id_rsa_your_key_bitbucket</code></pre></div>
 
 <h4 id="installation-of-nodejs-ubuntu-1404httpswwwdigitaloceancomcommunitytutorialshow-to-install-node-js-on-an-ubuntu-14-04-server"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server">Installation of NodeJs Ubuntu 14.04</a></h4>
 
