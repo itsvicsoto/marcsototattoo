@@ -2,99 +2,16 @@
 layout: default
 ---
 
-
-
 <div class="home">
 
-  <div class="section-header">
-    <div class="wrapper grid">
-      <div class="[ grid__item push--desk-two-twelfths desk-ten-twelfths ]">
-        <h1 class="section-header__title">
-          Latest Articles
-        </h1>
-      </div>
-    </div>
+  <div class="p-home-carousell">
+    <div class="p-home-carousell__item p-home-carousell__item--1" ></div>
+    <div class="p-home-carousell__item p-home-carousell__item--2" ></div>
+    <div class="p-home-carousell__item p-home-carousell__item--3" ></div>
+    <div class="p-home-carousell__item p-home-carousell__item--4" ></div>
+    <div class="p-home-carousell__item p-home-carousell__item--5" ></div>
+    <div class="p-home-carousell__item p-home-carousell__item--6" ></div>
+    <div class="p-home-carousell__item p-home-carousell__item--7" ></div>
   </div>
-
-  <div class="wrapper latest-lists grid">
-
-    <div class="[ latest-lists__posts-container ] [ grid__item push--desk-two-twelfths desk-ten-twelfths ]">
-      <ul class="latest-lists__posts">
-        {% for article in site.categories.articles %}
-        <li class="latest-lists__items">
-          <!-- <span class="meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
-          <h2 class="title">
-            <a class="link" href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
-          </h2>
-          <p>{{ article.description }}</p>
-          <a href="{{ article.url | prepend: site.baseurl }}">Continue Reading...</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="section-header">
-    <div class="wrapper grid">
-
-      <div class="[ section-header__sidemenu ] [ grid__item  desk-two-twelfths visuallyhidden--lap visuallyhidden--palm ]">
-        <ul>
-          <li>
-            <span class="highlight">Looking for me?</span>
-          </li>
-          <li>
-            <a href="mailto:itsvicsoto@gmail.com?Subject=Hello%20Vic!" target="_top">
-              itsvicsoto@gmail.com <i class="ion-ios-email"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/itsvicsoto">
-              Github <i class="ion-social-github"></i>
-            </a>
-          </li>
-          <li>
-            <a href="http://facebook.com/vicsoto16">
-              Facebook <i class="ion-social-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="http://instagram.com/vicsoto16">
-              Instagram <i class="ion-social-instagram"></i>
-            </a>
-          </li>
-        </ul>
-      </div><!--
-
-       --><div class="[ grid__item desk-ten-twelfths ]">
-        <h1 class="section-header__title">
-          Case Study & Projects
-        </h1>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="wrapper latest-lists grid">
-
-    <div class="[ latest-lists__posts-container ] [ grid__item push--desk-two-twelfths desk-ten-twelfths ]">
-      <ul class="latest-lists__posts">
-        {% for article in site.categories.case-study-projects %}
-        <li class="latest-lists__items">
-          <!-- <span class="meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
-          <h2 class="title">
-            <a class="link" href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
-          </h2>
-          <p>{{ article.description }}</p>
-          <a href="{{ article.url | prepend: site.baseurl }}">Continue Reading...</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-
-  </div>
-
-
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>
